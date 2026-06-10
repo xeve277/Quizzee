@@ -1,6 +1,12 @@
 /* CSS styles */
 :root{
-  
+  --bg: white;
+  --text: black;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
 }
 
 * {
@@ -235,10 +241,10 @@ footer {
 
 }
 
-@media (max-width: 534px) {
-  
-}
-@media (max-width: 656px)  {
-  
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --text: #f5f5f5;
+  }
 }
 	  
