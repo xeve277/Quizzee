@@ -241,34 +241,9 @@ footer {
 }
 
 @media (max-width: 534px) {
-  .polaroid {
-    height: 60%;
-  }
   
-  .scrolling {
-    height: 90%
-  }
-  
-  .scrolling img {
-    height: 83%;
-    padding: 1%;
-  }
-  
-  .timeline {
-    padding: 5% 0;  
-  }
-  
-  .timeline-item {
-    margin-bottom: 7%;
-  }
-  
-  .text { 
-    white-space: pre;
-  }
 }
 @media (max-width: 656px)  {
-  .memory_cube {
-    display: none;
-  }
+  
 }
 	  
