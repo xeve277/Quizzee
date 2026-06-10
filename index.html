@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   <link rel="stylesheet" href="styles.css" />
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-study Quiz System</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><button id="home_btn">Home</button></li>
+          <li><button id="make_your_quiz">Make your quiz</button></li>
+          <li><button id="try_your_quiz">Try your quiz</button></li>
+          <!--<li><button id="check_history">Check history</button></li>-->
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- home page -->
+      <section class="sec0" id="home_page">
+        <div class="introduction">
+          <p class="title">Welcome to Quizzee Website!</p>
+          <p class="p1">
+            Self-study is a key part of successful learning. Quizzee helps you turn your notes into interactive quizzes so you can test yourself, identify knowledge gaps, and strengthen your memory through practice.
+          </p>
+          <p class="p2">
+            Create, attempt, and review your own quizzes—all in one place.
+          </p>
+        </div>
+      </section>
+      <!-- enter quiz question-->
+      <section class="sec1" id="customize_questions">
+        <div id="question_list">
+          <div class="question-item">
+            <textarea class="question-box" placeholder="Enter your question..."></textarea>
+            <textarea class="answer-box" placeholder="Enter your answer..."></textarea>
+            <button class="delete-btn">Delete a question</button>
+          </div>
+        </div>
+        <button class="add-btn">Add a question</button>
+        <button class="question-btn" for="question_list">Submit</button>
+      </section>
+      <!-- try quiz question-->
+      <section class="sec2" id="try_quiz">
+        <div class="quiz-titles" id="quiz_list">
+        </div>
+        <div class="quizes" id="quizes">
+        </div>
+        <button class="submit-btn">Submit</button>
+      </section>
+    </main>
+    <!-- <audio controls autoplay loop>
+      <source src="https://raw.githubusercontent.com/xeve277/my_audio/b2884d77e91b7a8a1178a68fbd1c81490366944a/Victor%20Butzelaar%20-%20The%20Bird.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio> -->
+    <footer class="footer">
+      <p>Made by Lucy Zhang © 2026</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
