@@ -132,7 +132,7 @@ submitBtn.addEventListener('click', () => {
   const safeId = quizName.replaceAll(' ', '_')
   quizesDiv.innerHTML +=
   `
-  <p class="title">${quizName}</p>
+  <p class="title" id="is_id_${safeId}_title">${quizName}</p>
   <div class="quiz" id="is_id_${safeId}">
     ${getCodeFor(quiz)}
   </div>
@@ -174,9 +174,23 @@ quizListDiv.addEventListener('click', (e) => {
     quizListDiv.style.display = 'none'
     console.log(quizTitle)
     const safeId = quizTitle.replaceAll(' ', '_')
+
+    quizListDiv.style.display = 'none'
     quizesDiv.style.display = 'flex'
+
+    document.querySelectorAll('.quiz').forEach(q => {
+      q.style.display = 'none'
+    })
+
+    document.querySelectorAll('.title').forEach(t => {
+      t.style.display = 'none'
+    })
+
     document.getElementById(`is_id_${safeId}`).style.display = 'flex'
+    document.getElementById(`is_id_${safeId}_title`).style.display = 'flex'
+    
     submitQuizBtn.style.display = 'flex'
+
     currentQuiz = allQuizzes.find(
             q => q.quizName === quizTitle
         );
